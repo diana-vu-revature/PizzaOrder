@@ -11,6 +11,8 @@ public class CustomerDi extends Thread{
 
     Customer customer;
 
+    int insertedRow;
+
     public void run(){
         try{
             PreparedStatement pStatement = connection.prepareStatement("insert into customers(fname, size, cheese, pepperoni) values (?, ?, ?, ?)");
@@ -18,7 +20,7 @@ public class CustomerDi extends Thread{
             pStatement.setString(2, customer.getSize());
             pStatement.setString(3, customer.getCheese());
             pStatement.setString(4, customer.getPepperoni());
-            pStatement.executeUpdate();
+            insertedRow = pStatement.executeUpdate();
         } catch (SQLException e){
             e.printStackTrace();
         }
