@@ -14,3 +14,10 @@ A jank example of a pizza ordering application.
 - git & GitHub
 - Readme's & Javadocs
 - PostgreSQL database
+
+# How to enter DB
+```bash 
+docker image build . -f docker/Dockerfile.dockerfile -t customer
+docker run -d --name customer -e POSTGRES_PASSWORD=password -p 5432:5432 customer
+docker exec -it customer psql -U hiworld
+```
