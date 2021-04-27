@@ -22,7 +22,7 @@ To-do List:
 
 # Getting Started
 - clone repository
-- install Gradle
+- install Gradle and Docker
 ### How to enter DB
 ```bash 
 docker image build . -f docker/Dockerfile.dockerfile -t customer
