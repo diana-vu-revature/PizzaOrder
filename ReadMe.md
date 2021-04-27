@@ -3,9 +3,9 @@ A jank example of a pizza ordering application.
 
 # Project Description:
 A customer can:
-    - order multiple pizzas
-    - select toppings for their pizza
-    - see database of orders
+- order multiple pizzas
+- select toppings for their pizza
+- see database of orders
 
 # Technologies Used:
 - I/O Stream
@@ -18,7 +18,7 @@ A customer can:
 
 # Features
 To-do List:
-    - Customer can review and edit their order
+- Customer can review and edit their order
 
 # Getting Started
 - clone repository
